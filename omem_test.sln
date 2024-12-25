@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Memory", "Memory\Memory.vcxproj", "{C4149ECA-5866-41AE-948D-801F97ED45A6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "omem", "omem\omem.vcxproj", "{3547A115-B1D1-4046-87B4-A2068977A432}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6AE884E8-D25D-478C-88D8-0BECA09217A3}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4149ECA-5866-41AE-948D-801F97ED45A6}.Debug|x64.ActiveCfg = Debug|x64
+		{C4149ECA-5866-41AE-948D-801F97ED45A6}.Debug|x64.Build.0 = Debug|x64
+		{C4149ECA-5866-41AE-948D-801F97ED45A6}.Debug|x86.ActiveCfg = Debug|Win32
+		{C4149ECA-5866-41AE-948D-801F97ED45A6}.Debug|x86.Build.0 = Debug|Win32
+		{C4149ECA-5866-41AE-948D-801F97ED45A6}.Release|x64.ActiveCfg = Release|x64
+		{C4149ECA-5866-41AE-948D-801F97ED45A6}.Release|x64.Build.0 = Release|x64
+		{C4149ECA-5866-41AE-948D-801F97ED45A6}.Release|x86.ActiveCfg = Release|Win32
+		{C4149ECA-5866-41AE-948D-801F97ED45A6}.Release|x86.Build.0 = Release|Win32
+		{3547A115-B1D1-4046-87B4-A2068977A432}.Debug|x64.ActiveCfg = Debug|x64
+		{3547A115-B1D1-4046-87B4-A2068977A432}.Debug|x64.Build.0 = Debug|x64
+		{3547A115-B1D1-4046-87B4-A2068977A432}.Debug|x86.ActiveCfg = Debug|Win32
+		{3547A115-B1D1-4046-87B4-A2068977A432}.Debug|x86.Build.0 = Debug|Win32
+		{3547A115-B1D1-4046-87B4-A2068977A432}.Release|x64.ActiveCfg = Release|x64
+		{3547A115-B1D1-4046-87B4-A2068977A432}.Release|x64.Build.0 = Release|x64
+		{3547A115-B1D1-4046-87B4-A2068977A432}.Release|x86.ActiveCfg = Release|Win32
+		{3547A115-B1D1-4046-87B4-A2068977A432}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
