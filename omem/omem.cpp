@@ -90,7 +90,7 @@ void* omem_alloc(size_t _Size, void* _Owner/*= nullptr*/)
 	//	|area		|
 	//	|___________|
 
-	DWORD dwNumofPages = (DWORD)(2/*hdr + protection*/ + ((_Size / dwPageSize) + ((_Size % dwPageSize) / (_Size % dwPageSize))));
+	DWORD dwNumofPages = (DWORD)(2/*hdr + protection*/ + ((_Size / dwPageSize) + ((_Size % dwPageSize) ? 1 : 0)));
 	void* pPage = VirtualAlloc(NULL, dwNumofPages * dwPageSize, MEM_COMMIT | MEM_TOP_DOWN, PAGE_EXECUTE_READWRITE);
 	if (pPage != nullptr)
 	{
@@ -177,7 +177,7 @@ bool omem_unlock(void* _Block, void* _Owner /*= nullptr)*/)
 		{
 			DWORD dwProtect = 0;
 			if (VirtualProtect(omem->_Block, omem->_Size, PAGE_READWRITE, &dwProtect))
-			{			
+			{
 				return true;
 			}
 		}
