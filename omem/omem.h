@@ -31,7 +31,9 @@ void operator delete(void* _Block);
 void operator delete[](void* _Block);
 #endif
 
+void* omem_performance_alloc(size_t _Size, void* _Owner= nullptr);
 void* omem_alloc(size_t _Size, void* _Owner = nullptr);
+void* omem_alloc_base(size_t _Size, void* _Owner, bool _performance);
 bool omem_free(void* _Block, void* _Owner = nullptr);
 
 bool omem_lock(void* _Block, void* _Owner = nullptr);

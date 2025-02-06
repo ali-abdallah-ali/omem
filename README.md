@@ -23,6 +23,14 @@ Shared memory can be restricted to read operations unless explicitly unlocked.
 For write operations, the memory must be unlocked using the provided API.
 OMEM also includes a scoped unlock mechanism, which temporarily unlocks the memory and automatically re-locks it when the corresponding object goes out of scope, ensuring safe and controlled access.
 
+Performance Pointers:
+Unlike standard memory allocation, Performance Pointers take advantage of Windows’ ability to lock physical pages in memory,
+ensuring critical data stays in RAM and never gets paged out. This leads to dramatically faster and more consistent access speeds,
+perfect for high-performance computing, gaming, and real-time applications.
+
+	Prerequisite: you’ll need to enable the "Lock Pages in Memory" policy in your Windows OS settings. 
+	You can find detailed instructions on how to enable this setting here: 
+	https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/lock-pages-in-memory
 
  OMEM © 2024 by ALI ABDALLAH is licensed under CC BY-NC-SA 4.0.
  To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/
